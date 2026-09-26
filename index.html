@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho com Desconto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🛒 Carrinho de Compras</h1>
+
+        <!-- Lista de produtos -->
+        <div class="card">
+            <h2>Produtos</h2>
+            <ul id="product-list">
+                <!-- os itens vão aparecer aqui via JavaScript -->
+            </ul>
+        </div>
+
+        <!-- Resumo dos valores -->
+        <div class="card resumo">
+            <h2>Resumo</h2>
+            <p>Valor sem desconto: <span id="value-original">R$ 0</span></p>
+            <p>Desconto aplicado: <span id="value-descount" class="desconto">- R$ 0</span></p>
+            <hr>
+            <p class="total">Total com desconto: <span id="value-final">R$ 0</span></p>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
